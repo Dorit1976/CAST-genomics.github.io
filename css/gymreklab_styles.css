@@ -1,0 +1,64 @@
+/*
+ * Custom styles
+ * --------------------------------------------------
+ */
+
+
+footer {
+    padding-top: 20px;
+}
+
+.subfooter {
+    padding-top: 20px;
+    background: #000;
+    color: #777;
+}
+
+html,body{
+  height: 100%;
+  font-size: 12pt;
+}
+
+.container {
+    max-width: 1024px;
+    min-height: 80%;
+    overflow: hidden;
+}
+
+.headshot {
+	width: 120px;
+	margin: 0px 0px;
+}
+
+.researchpic {
+  width: 300px;
+  margin: 0px 0px;
+}
+
+.building {
+	margin: 5px 0px;
+}
+
+.softwaretable td {
+  vertical-align: top;
+  padding: 15px;
+}
+
+.schedule td {
+  vertical-align: left;
+  padding: 5px;
+  border: 1px;
+}
+
+.peopletable td {
+  vertical-align: center;
+  padding: 15px;
+}
+
+img-responsive {
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
