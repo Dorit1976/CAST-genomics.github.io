@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+       <link href="{{ site.path }}/css/bootstrap.min.css" rel="stylesheet">
+   <link href="{{ site.path }}/css/gymreklab_styles.css" rel="stylesheet">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="{{ site.path }}/js/bootstrap.min.js"></script>
+   
     <meta charset="UTF-8">
    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 
@@ -14,6 +20,26 @@
     {% include head-custom.html %}
   </head>
   <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ site.path }}/index.html">{{ site.title }}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+      <li><a class="active" href="{{ site.path }}/people.html">People</a></li>
+      <li><a class="active" href="{{ site.path }}/publications.html">Publications</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
