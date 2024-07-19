@@ -22,7 +22,8 @@
   }
 }
 
-table {
+.main-content {
+	table {
     display: block;
     width: 100%;
     overflow: auto;
@@ -44,6 +45,7 @@ table {
       border: none;
     }
   }
+}
 
 .headshot {
 	width: 120px;
