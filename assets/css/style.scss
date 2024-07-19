@@ -7,7 +7,7 @@
   color: #fff;
   text-align: center;
   background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #991599);
+  background-image: url('{{ site.baseurl }}/assets/images/castblack-01-2.png');
 
   @include large {
     padding: 5rem 6rem;
