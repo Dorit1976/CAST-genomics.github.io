@@ -2,21 +2,70 @@
 layout: pagelayout
 ---
 
+<!--
+How to add a new group (table) or new members (row/cell):
+1. Check if the group exist by looking for the <h2> header in the scripts, e.g. <h2> Principal Investigators <h2>.
+* If the group is not exist, create one using the following format:
+<hr>
+<table class="peopletable" align="center">
+	<tbody>
+		<tr>
+			<td colspan="4">
+				<h2>new_group_header_name</h2>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img class="headshot" src="image_file_path" alt="alternative_text_to_display">
+				<h3>Name, Education</h3>
+				<h4>Insititute</h4>
+				<h4>Role</h4>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+The above script doing: 
+	a. First, add a horizontal line using <hr>
+	b. Then, create a group (table) using format like <table class="peopletable" align="center">. 
+	c. start the table body <tbody>
+	d. start the row <tr>, cell <td>, add heading <h2>new_table_head_here<h2>
+	d. close the cell </td>, row </tr>, body </tdoby> and table </table>.
+
+2. If your group alread exist:
+* First check if the there still empty cells in current row.
+* If not, start a new row by insert <tr> before </tbody> following the style above, then add your information.
+* Close the cell </td>, any new row added </tr> 
+
+3. Test locally to check if everything looks as expected
+-->
+
 <h1>The CAST Team</h1>
 <div class="center-description">
-
-	<table class="peopletable" align="center">
+	<!-- create a new table -->
+	<table class="peopletable" align="center"> 
+        <!-- start the table body -->	
 	<tbody>
+	<!-- start a row -->
 	<tr>
+		<!-- specify the cell -->
 		<td colspan="3">
+			<!-- add subheading for the table -->
 			<h2>Principal Investigators</h2>
+		<!-- close the cell -->	
 		</td>
+	<!-- close the row -->
 	</tr>
+	<!-- start a new row -->	
 	<tr>
+		<!-- start a new cell -->
 		<td>
+				<!-- specify the image file path, `alt` attribute provide alternative text if the image can't be displayed -->
 				<img class="headshot" src="assets/images/Lucila.png" alt="Lucila Ohno-Machado">
+			   	<!-- sppecify the subheading -->	
 				<h3>Lucila Ohno-Machado, MD, PhD</h3>
 				<h4>Medical Informatics</h4>
+		<!-- close the cell -->
 		</td>
 		<td>
 				<img class="headshot" src="assets/images/Kelly.png" alt="Kelly Frazer">
@@ -100,7 +149,7 @@ layout: pagelayout
 	</tbody>
 	</table>
 
-	<hr />
+<hr />
 
 	<table class="peopletable" align="center">
 	<tbody>
@@ -133,4 +182,32 @@ layout: pagelayout
 	</tr>
 	</tbody>
 	</table>
+<!-- uncomment this section to add Trainees table
+<hr />
+
+	<table class="peopletable" align="center">
+	<tbody>
+	<tr>
+		<td colspan="4">
+			<h2>Trainees</h2>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			&nbsp; 	
+		</td>
+		<td>
+			&nbsp;	
+		</td>
+		<td>
+			&nbsp;	
+		</td>
+		<td>
+			&nbsp;	
+		</td>
+	</tr>
+</tbody>
+</table>
+-->
+
 </div>
